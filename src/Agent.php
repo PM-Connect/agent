@@ -43,11 +43,16 @@ class Agent extends Mobile_Detect
     protected static $additionalBrowsers = [
         'Opera Mini' => 'Opera Mini',
         'Opera' => 'Opera|OPR',
+        'Facebook Mobile' => 'FB_IAB',
         'Edge' => 'Edge',
-        'UCBrowser' => 'UCBrowser',
+        'UC Browser' => 'UCBrowser',
         'Vivaldi' => 'Vivaldi',
+        'Android Mobile' => 'Android.*Mobile\/.*\sSafari|Android.*Mobile.*\sSafari',
+        'Chrome iOS' => 'iPhone.*Chrome',
         'Chrome' => 'Chrome',
+        'Firefox iOS' => 'iPhone.*Firefox',
         'Firefox' => 'Firefox',
+        'Mobile Safari' => 'iPhone.*Mobile\/.*\sSafari',
         'Safari' => 'Safari',
         'IE' => 'MSIE|IEMobile|MSIEMobile|Trident/[.0-9]+',
         'Netscape' => 'Netscape',
@@ -71,11 +76,13 @@ class Agent extends Mobile_Detect
         // Browsers
         'Opera Mini' => 'Opera Mini/[VER]',
         'Opera' => [' OPR/[VER]', 'Version/[VER]', 'Opera [VER]'],
+        'Samsung Browser' => 'SamsungBrowser/[VER]',
         'Netscape' => 'Netscape/[VER]',
         'Mozilla' => 'rv:[VER]',
-        'IE' => ['IEMobile/[VER];', 'IEMobile [VER]', 'MSIE [VER];', 'rv:[VER]'],
-        'Edge' => 'Edge/[VER]',
+        'Internet Explorer' => ['IEMobile/[VER];', 'IEMobile [VER]', 'MSIE [VER];', 'rv:[VER]'],
+        'Microsoft Edge' => 'Edge/[VER]',
         'Vivaldi' => 'Vivaldi/[VER]',
+        'BlackBerry' => 'BlackBerry [VER]',
     ];
 
     /**
