@@ -48,7 +48,7 @@ class Agent extends Mobile_Detect
         'UC Browser' => 'UCBrowser',
         'Vivaldi' => 'Vivaldi',
         'Samsung Browser' => 'SamsungBrowser',
-        'Android Mobile' => 'Android.*Mobile\/.*\sSafari|Android.*Mobile.*\sSafari',
+        'Android Mobile' => 'Android.*Mobile\/.*\sSafari|Android.*Mobile.*\sSafari|Dalvik',
         'Chrome iOS' => '(iPhone|iPad|iPod).*(Chrome|CriOS)',
         'Chrome' => 'Chrome',
         'Firefox iOS' => '(iPhone|iPad|iPod).*(Firefox|FxiOS)',
@@ -89,7 +89,8 @@ class Agent extends Mobile_Detect
         'Vivaldi' => 'Vivaldi/[VER]',
         'Chrome iOS' => ['Chrome/[VER]', 'CriOS/[VER]'],
         'Facebook Mobile' => 'FBAV/[VER]',
-        'Firefox iOS' => ['Firefox/[VER]', 'FxiOS/[VER]']
+        'Firefox iOS' => ['Firefox/[VER]', 'FxiOS/[VER]'],
+        'Android Mobile' => ['Version/[VER]', 'Dalvik/[VER]']
     ];
 
     /**
