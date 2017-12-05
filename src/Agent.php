@@ -49,13 +49,14 @@ class Agent extends Mobile_Detect
         'Vivaldi' => 'Vivaldi',
         'Samsung Browser' => 'SamsungBrowser',
         'Android Mobile' => 'Android.*Mobile\/.*\sSafari|Android.*Mobile.*\sSafari',
-        'Chrome iOS' => '(iPhone|iPad).*(Chrome|CriOS)',
+        'Chrome iOS' => '(iPhone|iPad|iPod).*(Chrome|CriOS)',
         'Chrome' => 'Chrome',
-        'Firefox iOS' => '(iPhone|iPad).*Firefox',
+        'Firefox iOS' => '(iPhone|iPad|iPod).*(Firefox|FxiOS)',
         'Firefox' => 'Firefox',
-        'Mobile Safari' => '(iPhone|iPad).*Mobile\/.*\sSafari',
+        'Mobile Safari' => '(iPhone|iPad|iPod).*Mobile\/.*\sSafari',
         'Safari' => 'Safari',
-        'IE' => 'MSIE|IEMobile|MSIEMobile|Trident/[.0-9]+',
+        'Internet Explorer Mobile' => 'IEMobile|MSIEMobile',
+        'Internet Explorer' => 'MSIE|Trident/[.0-9]+',
         'Netscape' => 'Netscape',
         'Mozilla' => 'Mozilla',
     ];
@@ -82,11 +83,13 @@ class Agent extends Mobile_Detect
         'Samsung Browser' => 'SamsungBrowser/[VER]',
         'Netscape' => 'Netscape/[VER]',
         'Mozilla' => 'rv:[VER]',
-        'Internet Explorer' => ['IEMobile/[VER];', 'IEMobile [VER]', 'MSIE [VER];', 'rv:[VER]'],
+        'Internet Explorer' => ['MSIE [VER];', 'rv:[VER]'],
+        'Internet Explorer Mobile' => ['IEMobile/[VER];', 'IEMobile [VER]'],
         'Microsoft Edge' => 'Edge/[VER]',
         'Vivaldi' => 'Vivaldi/[VER]',
-        'Chrome iOS' => 'CriOS/[VER]',
-        'Facebook Mobile' => 'FBAV/[VER]'
+        'Chrome iOS' => ['Chrome/[VER]', 'CriOS/[VER]'],
+        'Facebook Mobile' => 'FBAV/[VER]',
+        'Firefox iOS' => ['Firefox/[VER]', 'FxiOS/[VER]']
     ];
 
     /**
