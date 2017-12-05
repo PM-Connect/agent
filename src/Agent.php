@@ -44,7 +44,7 @@ class Agent extends Mobile_Detect
         'Opera Mini' => 'Opera Mini',
         'Opera' => 'Opera|OPR',
         'Facebook Mobile' => 'FB_IAB',
-        'Edge' => 'Edge',
+        'Microsoft Edge' => 'Edge',
         'UC Browser' => 'UCBrowser',
         'Vivaldi' => 'Vivaldi',
         'Android Mobile' => 'Android.*Mobile\/.*\sSafari|Android.*Mobile.*\sSafari',
