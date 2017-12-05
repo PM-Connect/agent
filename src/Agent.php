@@ -47,12 +47,13 @@ class Agent extends Mobile_Detect
         'Microsoft Edge' => 'Edge',
         'UC Browser' => 'UCBrowser',
         'Vivaldi' => 'Vivaldi',
+        'Samsung Browser' => 'SamsungBrowser',
         'Android Mobile' => 'Android.*Mobile\/.*\sSafari|Android.*Mobile.*\sSafari',
-        'Chrome iOS' => 'iPhone.*Chrome',
+        'Chrome iOS' => '(iPhone|iPad).*(Chrome|CriOS)',
         'Chrome' => 'Chrome',
-        'Firefox iOS' => 'iPhone.*Firefox',
+        'Firefox iOS' => '(iPhone|iPad).*Firefox',
         'Firefox' => 'Firefox',
-        'Mobile Safari' => 'iPhone.*Mobile\/.*\sSafari',
+        'Mobile Safari' => '(iPhone|iPad).*Mobile\/.*\sSafari',
         'Safari' => 'Safari',
         'IE' => 'MSIE|IEMobile|MSIEMobile|Trident/[.0-9]+',
         'Netscape' => 'Netscape',
@@ -76,13 +77,16 @@ class Agent extends Mobile_Detect
         // Browsers
         'Opera Mini' => 'Opera Mini/[VER]',
         'Opera' => [' OPR/[VER]', 'Version/[VER]', 'Opera [VER]'],
+        'Safari' => 'Version/[VER]',
+        'Mobile Safari' => 'Version/[VER]',
         'Samsung Browser' => 'SamsungBrowser/[VER]',
         'Netscape' => 'Netscape/[VER]',
         'Mozilla' => 'rv:[VER]',
         'Internet Explorer' => ['IEMobile/[VER];', 'IEMobile [VER]', 'MSIE [VER];', 'rv:[VER]'],
         'Microsoft Edge' => 'Edge/[VER]',
         'Vivaldi' => 'Vivaldi/[VER]',
-        'BlackBerry' => 'BlackBerry [VER]',
+        'Chrome iOS' => 'CriOS/[VER]',
+        'Facebook Mobile' => 'FBAV/[VER]'
     ];
 
     /**
