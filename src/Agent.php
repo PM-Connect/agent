@@ -48,7 +48,7 @@ class Agent extends Mobile_Detect
         'UC Browser' => 'UCBrowser',
         'Vivaldi' => 'Vivaldi',
         'Samsung Browser' => 'SamsungBrowser',
-        'Android Mobile' => 'Android.*Mobile\/.*\sSafari|Android.*Mobile.*\sSafari|Dalvik',
+        'Android Mobile' => 'Android.*Mobile\sSafari|Dalvik',
         'Chrome iOS' => '(iPhone|iPad|iPod).*(Chrome|CriOS)',
         'Chrome' => 'Chrome',
         'Firefox iOS' => '(iPhone|iPad|iPod).*(Firefox|FxiOS)',
